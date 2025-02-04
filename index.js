@@ -12,12 +12,17 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("Connected to MongoDB"))
   .catch(err => console.log(err));
 
+
+app.set("view engine", "ejs");
+app.set("views", path.resolve("./views"));
+
+
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.render("home");
 });
 
 
