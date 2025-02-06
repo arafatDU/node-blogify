@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const path = require("path");
 
 const userRoute = require("./routes/user");
+const blogRoute = require("./routes/blog");
 const { checkForAuthenticationCookie } = require("./middlewares/authentication");
 
 
@@ -32,7 +33,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/user", userRoute);
-
+app.use("/blog", blogRoute);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
