@@ -24,7 +24,15 @@ cd node-blogify
 npm install
 ```
 
-### 3. Running the IDE
+### 3. Setup MongoDB Database:
+
+Rename ".env.example" file to .env and update "MONGO_URI"
+
+```bash
+MONGO_URI="....Your_MongoDB_URL..."
+```
+
+### 4. Running the IDE
 
 ```bash
 npm run dev
