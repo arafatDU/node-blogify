@@ -14,7 +14,7 @@ Make sure You have Node JS installed on your PC.
 No surprise in the first step:
 
 ```bash
-git clone https://github.com/arafatDU/node-blogify
+git clone https://github.com/arafatDU/node-blogify.git
 cd node-blogify
 ```
 
